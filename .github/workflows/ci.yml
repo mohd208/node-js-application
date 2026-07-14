@@ -28,7 +28,7 @@ jobs:
         run: npm run lint
 
       - name: Echo test placeholder
-        run: echo "Test steps will go here"
+        run: echo "Test steps will go here once it done"
 
       - name: Echo done
         run: echo "CI pipeline placeholder complete"
