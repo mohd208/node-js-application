@@ -22,5 +22,10 @@ jobs:
       - name: Echo test placeholder
         run: echo "Test steps will go here"
 
+      - name: Echo variables
+        run: |
+          echo "Username: ${{ vars.USERNAME }}"
+          echo "Password: ${{ vars.PASSWORD }}"
+
       - name: Echo done
         run: echo "CI pipeline placeholder complete"
