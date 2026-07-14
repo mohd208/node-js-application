@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Echo start
+        run: echo "Starting CI pipeline for node-js-application"
+
+      - name: Echo node version placeholder
+        run: echo "Node setup and install steps will go here"
+
+      - name: Echo test placeholder
+        run: echo "Test steps will go here"
+
+      - name: Echo done
+        run: echo "CI pipeline placeholder complete"
