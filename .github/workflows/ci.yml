@@ -27,8 +27,8 @@ jobs:
       - name: Lint (fails on unused variables/functions)
         run: npm run lint
 
-      - name: Echo test placeholder
-        run: echo "Test steps will go here once it done"
+      - name: Run tests
+        run: npm test
 
       - name: Echo done
         run: echo "CI pipeline placeholder complete"
