@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test/index.test.js"
+    "test": "node test/index.test.js",
+    "lint": "eslint ."
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^10.7.0"
+  }
 }

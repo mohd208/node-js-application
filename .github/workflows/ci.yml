@@ -16,8 +16,16 @@ jobs:
       - name: Echo start
         run: echo "Starting CI pipeline for node-js-application-for-testing-purposes"
 
-      - name: Echo node version placeholder
-        run: echo "Node setup and install steps will go here"
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint (fails on unused variables/functions)
+        run: npm run lint
 
       - name: Echo test placeholder
         run: echo "Test steps will go here"
