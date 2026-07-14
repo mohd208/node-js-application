@@ -1,4 +1,10 @@
+const path = require('path'); // unused import
 const { getGreeting } = require('./utils');
+
+// Defined but never called
+function logRequest(req) {
+  console.log(`Incoming request: ${req.url}`);
+}
 
 function handleRequest(req, res) {
   if (req.url === '/health') {
