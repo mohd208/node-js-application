@@ -1,0 +1,13 @@
+# This workflows run on schedule to check vunerable packages and raise to pr to update the packages
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+    target-branch: "develop"
+    groups:
+      Packages-version-update: 
+        patterns:
+          - "*"
