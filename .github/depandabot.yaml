@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: "daily"
       time: "03:00"
-    target-branch: "develop"
+    target-branch: "main"
     groups:
       Packages-version-update: 
         patterns:
