@@ -1,7 +1,7 @@
 # This workflows run on schedule to check vunerable packages and raise to pr to update the packages
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
